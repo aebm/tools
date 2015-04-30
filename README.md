@@ -13,3 +13,4 @@ Compilation of tools of the trade
 * **oom_lister.py:** List process ordered by oom score
 * **utf8_checker.py:** Checks if a list of files is utf-8 encoded
 * **mysql_processlist.py:** Prints to stdout as csv the output of mysql processlist command until a number of iterations is reached or a especified file is created
+* **killer.c:** Launch N process that runs hdparm. This is a work in progress
