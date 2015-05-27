@@ -6,17 +6,15 @@ import subprocess
 
 def write(index):
     path = '/tmp'
-    with open(os.path.join(path, str(index)), 'wb', 0) as f:
-        f.write(str(0))
-        f.flush()
-        os.fsync(f.fileno())
+    while True:
+        subprocess.call(['dd', 'if=/dev/zero', 'of={}'.format(os.path.join(path, str(index))), 'oflag=direct', 'conv=fsync'])
 
 def read(_):
     while True:
         subprocess.call(['dd', 'if=/dev/sda', 'of=/dev/null', 'iflag=direct'])
 
 def main():
-    n = 10
+    n = 500
     pool1 = multiprocessing.Pool(processes=n)
     pool2 = multiprocessing.Pool(processes=n)
     r1 = pool1.map_async(write, xrange(n), 1)
