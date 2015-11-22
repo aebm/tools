@@ -112,6 +112,10 @@ def main():
         lengths = [(0, 0)]
     if processes_info:
         lengths.extend([get_lengths(elem) for elem in processes_info])
+    # see zip documentation on how to unzip a list
+    # https://docs.python.org/3/library/functions.html#zip
+    # for each tuple position the max value
+    # self trolling ^_^
     max_lengths = map(max, *lengths)
     if args.v:
         print('Lengths are pid: {pid} score: {score}'.format(
