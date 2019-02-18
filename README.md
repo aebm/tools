@@ -16,6 +16,7 @@ Compilation of tools of the trade
 * **killer.c:** Launch N process that runs hdparm. This is a work in progress
 * **punisher.py:** Program to saturate IO WIP
 * **godmode.c:** Sleep a lot of seconds and ignore all the signals ignorable
+* **delta_printer.py:** Print the time deltas between to log entries (the input needs to be filtered to only have start and end entries)
 
 To compile
 ----------
