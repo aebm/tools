@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # You need to generate an access token https://github.com/settings/tokens
-# repo:status and public_repo
+# repo:status and public_repo. If you also want the private repos grant all repo privileges
 
 GH_USER=FILLME
 TOKEN=FILLME
