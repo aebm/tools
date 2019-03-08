@@ -17,6 +17,7 @@ Compilation of tools of the trade
 * **punisher.py:** Program to saturate IO WIP
 * **godmode.c:** Sleep a lot of seconds and ignore all the signals ignorable
 * **delta_printer.py:** Print the time deltas between to log entries (the input needs to be filtered to only have start and end entries)
+* **get_gh_org_repos.sh:** Get a JSON with the organization repos
 
 To compile
 ----------
